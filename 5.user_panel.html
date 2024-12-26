@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Metas-->
+  <meta charset="utf-8" />
+  <meta name="description" content="Website Description Come's Here" />
+  <meta name="title" content="Title gose here" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--Title-->
+  <title>GF | User Panel</title>
+
+  <!--Favicon Icon-->
+  <link rel="Shortcut icon" type="images/png" href="images/favicon.png" />
+
+  <!--StyleSheets-->
+  <!--Normalizer-->
+  <link rel="stylesheet" type="text/css" media="all" href="css/normalize.css" />
+  <!--Reset-->
+  <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!--Main Css's-->
+  <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+  <!--Responsive Css-->
+  <link rel="stylesheet" type="text/css" media="all" href="css/responsive.css" />
+</head>
+
+<body class="bg-gray">
+  <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!--========================================================
+					Start User Layout Area 
+	=========================================================-->
+
+  <!-- HEADER -->
+  <header class="result-page-header">
+    <div class="result-page-header-left">
+      <b>User Panel</b>
+    </div>
+    <div class="header-right">
+      <div class="notification-point">
+        <button class="dropMenuBtn">
+          <span>10</span>
+          <img src="images/icn/notification.svg" alt="">
+        </button>
+        <div class="notification-bar toggleDiv" style="display: none;">
+          <ul>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+          </ul>
+          <div class="view-all-notification">
+            <a href="#">View All</a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-menu-wrapper">
+        <a href="9.my_account.html" class="profile-btn">
+          <div>
+            <img src="images/gf/1.png" alt="">
+          </div>
+          <div class="profile-details">
+            <b>Yeasin Arafat</b>
+            <span>Developer</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- SIDEBAR -->
+  <sidebar class="sidebar-area">
+    <div class="sidebar-top">
+      <img src="images/logo.svg" alt="" />
+
+      <div class="sidebar">
+        <ul>
+            <li class="menu"><img src="images/icn/sample-dashboard.svg" alt="" /> Sample</li>
+            <ul class="submenu">
+                <li><a href="3.sample_dashboard.html" class="active-page">Dashboard</a></li>
+                <li><a href="3.2.buyer_list.html">Buyer List</a></li>
+                <li><a href="8.add_new_sample-form.html">Add New</a></li>
+                <li><a href="7.search.html">Search/Filter</a></li>
+            </ul>
+            <li class="menu"><img src="images/icn/order-list.svg" alt="" /> Order List</li>
+            <ul class="submenu">
+              <li><a href="blank.html">Dashboard</a></li>
+              <li><a href="blank.html">Buyer List</a></li>
+              <li><a href="blank.html">Add New</a></li>
+              <li><a href="blank.html">Search</a></li>
+            </ul>
+            <li class="menu"><img src="images/icn/store.svg" alt="" /> Store</li>
+            <ul class="submenu">
+              <li><a href="10.store_leather_dashboard.html">Leather</a></li>
+              <li><a href="12.store_metal_and_lining_dashboard.html">Metal & Lining</a></li>
+              <li><a href="14.store_chemical_dashboard.html">Chemical</a></li>
+            </ul>
+        </ul>
+      </div>
+
+    </div>
+    <div class="sidebar-bottom">
+      <ul>
+          <li><a href="#"><img src="images/icn/logout.svg" alt="" /> Logout</a></li>
+      </ul>
+    </div>
+  </sidebar>
+  
+  <section class="dashboard-area">
+    <div class="dashboard content">
+      <div class="dashboard-main-content-area result-page-wrap">
+        <div class="page-table-content-wrapper mt-0">
+          <div class="gf-title-wrap result-page-controller-btns">
+            <h5 class="title-h5">All User's</h5>
+            <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#add-new-user">
+              Add New User
+            </button>
+          </div>
+          <div class="search-bar user-search-bar">
+            <form action="">
+              <img src="images/icn/2.svg" alt="" />
+              <input type="search" name="" placeholder="Search for user..." id="" />
+            </form>
+          </div>
+          <div class="wrap-user"></div>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                All User<span>30</span>
+              </button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                Merchandiser<span>18</span>
+              </button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                Officer<span>18</span>
+              </button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                Assistant Officer<span>18</span>
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="table-wrapper table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>IMG</th>
+                      <th>Name</th>
+                      <th>Depertment</th>
+                      <th>Designation</th>
+                      <th>GF ID No.</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="images/gf/1.png" alt="" class="profile-img"></td>
+                      <td>Yeasin Arafat</td>
+                      <td>IT </td>
+                      <td>Developer</td>
+                      <td>27560</td>
+                      <td>yeasin108arafat@gmail.com</td>
+                      <td>01636439612</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#edit-user">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete-user">
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/gf/2.png" alt="" class="profile-img"></td>
+                      <td>Abu Ansary Tuhin</td>
+                      <td>IT </td>
+                      <td>Graphic Designer</td>
+                      <td>27560</td>
+                      <td>tuhin@gmail.com</td>
+                      <td>01724589314</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#edit-user">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete-user">
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/gf/1.png" alt="" class="profile-img"></td>
+                      <td>Badhon Khan</td>
+                      <td>IT</td>
+                      <td>Scratch Designer</td>
+                      <td>2560</td>
+                      <td>badhon@gmail.com</td>
+                      <td>01987632145</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#edit-user">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete-user">
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/gf/1.png" alt="" class="profile-img"></td>
+                      <td>Arefeen Rayeed</td>
+                      <td>IT </td>
+                      <td>Content Writer</td>
+                      <td>2750</td>
+                      <td>rayeed@gmail.com</td>
+                      <td>01578936541</td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#edit-user">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete-user">
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="table-wrapper table-responsive">
+                <p>Data Come's Here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========================================================
+					End User Layout Area 
+	=========================================================-->
+
+  <!-- Add New User Modal -->
+  <div class="modal fade" id="add-new-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add New User</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="metal-form">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Name *</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">GF ID No. *</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Depertment *</label>
+                    <div class="select-wrap">
+                      <select name="depertment" id="depertment">
+                        <option value="">Select--</option>
+                        <option value="">Factory Management</option>
+                        <option value="">Store</option>
+                        <option value="">Marchendising</option>
+                        <option value="">Sample</option>
+                      </select>
+                      <span class="select-angle">
+                        <img src="images/gf/caret-down-fill.svg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Designation *</label>
+                    <div class="select-wrap">
+                      <select name="designation" id="designation">
+                        <option value="">Select--</option>
+                        <option value="">Super Admin</option>
+                        <option value="">Admin</option>
+                        <option value="">Marchendiser</option>
+                        <option value="">Officer</option>
+                        <option value="">Ass. Officer</option>
+                        <option value="">Head of Depertment</option>
+                      </select>
+                      <span class="select-angle">
+                        <img src="images/gf/caret-down-fill.svg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Phone No. *</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Email *</label>
+                    <input type="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="image-upload-1">Upload an image:</label>
+                    <div class="input-file-wrap">
+                      <input type="file" class="image-upload">
+                    </div>
+                    <div class="preview-container">
+                      <!-- Preview for single image -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-input-wrap text-right mt-2">
+                <button type="submit" class="btn btn-sm btn-success">
+                  Register User
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Edit User Modal -->
+  <div class="modal fade" id="edit-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit User</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="metal-form">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Name *</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">GF ID No. *</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">User Roll *</label>
+                    <div class="select-wrap">
+                      <select name="depertment" id="depertment">
+                        <option value="">Select--</option>
+                        <option value="">Super Admin</option>
+                        <option value="">Authority</option>
+                        <option value="">Sample Management</option>
+                        <option value="">Store Management</option>
+                      </select>
+                      <span class="select-angle">
+                        <img src="images/gf/caret-down-fill.svg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Designation *</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Phone No. *</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="">Email *</label>
+                    <input type="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input-wrap">
+                    <label for="image-upload-1">Upload an image:</label>
+                    <div class="input-file-wrap">
+                      <input type="file" class="image-upload">
+                    </div>
+                    <div class="preview-container">
+                      <!-- Preview for single image -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-input-wrap text-right mt-2">
+                <button type="submit" class="btn btn-sm btn-success">
+                  Update User
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Delete User Modal -->
+  <div class="modal fade" id="delete-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Delete User</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="metal-form">
+            <div class="text-center">
+              <p>Are you sure you want to delete <b>Yeasin Arafat</b>?</p>
+            </div>
+            <form action="" class="delete-from">
+              <div class="d-flex justify-content-center align-items-center mt-3">.
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">
+                  No Cancel
+                </button>
+                <button type="submit" class="btn btn-sm btn-danger">
+                  Yes Delete
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Normalizer-->
+  <script type="text/javascript" src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <!--JQuery-->
+  <script type="text/javascript" src="js/vendor/jquery.js"></script>
+  <!--Plugins-->
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <!--ALL RELATED PLUGINS-->
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <!--Main Js-->
+  <script type="text/javascript" src="js/search-page-script.js"></script>
+  <script type="text/javascript" src="js/custom-calendar.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Metas-->
+  <meta charset="utf-8" />
+  <meta name="description" content="Website Description Come's Here" />
+  <meta name="title" content="Title gose here" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--Title-->
+  <title>GF | Sample Information</title>
+
+  <!--Favicon Icon-->
+  <link rel="Shortcut icon" type="images/png" href="images/favicon.png" />
+
+  <!--StyleSheets-->
+  <!--Normalizer-->
+  <link rel="stylesheet" type="text/css" media="all" href="css/normalize.css" />
+  <!--Reset-->
+  <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- flatpickr -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup/dist/magnific-popup.css">
+
+  <!--Main Css's-->
+  <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+  <!--Responsive Css-->
+  <link rel="stylesheet" type="text/css" media="all" href="css/responsive.css" />
+</head>
+
+<body class="bg-gray">
+  <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!--========================================================
+					Start User Layout Area 
+	=========================================================-->
+
+  <!-- HEADER -->
+  <header class="result-page-header">
+    <div class="result-page-header-left">
+      <b>Sample Details</b>
+    </div>
+    <div class="header-right">
+      <div class="notification-point">
+        <button class="dropMenuBtn">
+          <span>10</span>
+          <img src="images/icn/notification.svg" alt="">
+        </button>
+        <div class="notification-bar toggleDiv" style="display: none;">
+          <ul>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Order Created - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's</p>
+              </a>
+            </li>
+          </ul>
+          <div class="view-all-notification">
+            <a href="#">View All</a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-menu-wrapper">
+        <a href="9.my_account.html" class="profile-btn">
+          <div>
+            <img src="images/gf/1.png" alt="">
+          </div>
+          <div class="profile-details">
+            <b>Yeasin Arafat</b>
+            <span>Developer</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <sidebar class="sidebar-area">
+    <div class="sidebar-top">
+      <img src="images/logo.svg" alt="" />
+
+      <div class="sidebar">
+        <ul>
+          <li class="menu"><img src="images/icn/sample-dashboard.svg" alt="" /> Sample</li>
+          <ul class="submenu">
+            <li><a href="3.sample_dashboard.html" class="active-page">Dashboard</a></li>
+            <li><a href="3.2.buyer_list.html">Buyer List</a></li>
+            <li><a href="8.add_new_sample-form.html">Add New</a></li>
+            <li><a href="7.search.html">Search/Filter</a></li>
+          </ul>
+          <li class="menu"><img src="images/icn/order-list.svg" alt="" /> Order List</li>
+          <ul class="submenu">
+            <li><a href="blank.html">Dashboard</a></li>
+            <li><a href="blank.html">Buyer List</a></li>
+            <li><a href="blank.html">Add New</a></li>
+            <li><a href="blank.html">Search</a></li>
+          </ul>
+          <li class="menu"><img src="images/icn/store.svg" alt="" /> Store</li>
+          <ul class="submenu">
+            <li><a href="10.store_leather_dashboard.html">Leather</a></li>
+            <li><a href="12.store_metal_and_lining_dashboard.html">Metal & Lining</a></li>
+            <li><a href="14.store_chemical_dashboard.html">Chemical</a></li>
+          </ul>
+        </ul>
+      </div>
+
+    </div>
+    <div class="sidebar-bottom">
+      <ul>
+        <li><a href="#"><img src="images/icn/logout.svg" alt="" /> Logout</a></li>
+      </ul>
+    </div>
+  </sidebar>
+
+  <!-- DASHBOAD -->
+  <section class="dashboard-area">
+    <div class="dashboard content">
+      <div class="dashboard-main-content-area specific smaple-detail-page overflow-hidden">
+        <div class="text-right mb-3" style="max-width: 700px; margin: auto;">
+            <button class="btn btn-sm btn-success" onclick="generatePDF()">Download PDF</button>
+        </div>
+        <div class="result-page-main-content a4-page-wrap">
+          <div id="content">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="pdf-header-left">
+                <h5>Geox - 10</h5>
+                <span style="font-size: 12px;">Geox </span>
+              </div>
+              <div class="pdf-header-right">
+                <img src="data:image/png;base64,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" alt="">
+                <span style="font-size: 12px; padding-top: 5px; display: block;">GFMS</span>
+              </div>
+            </div>
+            <b style="font-size: 10px;">Basic Information</b>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Article No.</th>
+                  <th>Buyer Name</th>
+                  <th>Total Qty.</th>
+                  <th>Varient Qty.</th>
+                  <th>Sample Added</th>
+                  <th>Del. Date</th>
+                  <th>Added By</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Geox - 10</td>
+                  <td>Geox</td>
+                  <td>06</td>
+                  <td>03</td>
+                  <td>10/12/24</td>
+                  <td>15/12/24</td>
+                  <td>Asad</td>
+                  <td>2 day's Late</td>
+                </tr>
+              </tbody>
+            </table>
+            <b style="font-size: 10px;">Main Varient (2 PCS)</b>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>SL.</th>
+                  <th>Item Name</th>
+                  <th>Type</th>
+                  <th>Size</th>
+                  <th>Color</th>
+                  <th>Qty</th>
+                  <th>Photo</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td class="item-name">Measurement</td>
+                  <td></td>
+                  <td>20x33x12 cm</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td class="item-name">Leather</td>
+                  <td>Flooter</td>
+                  <td>100sq</td>
+                  <td>Black</td>
+                  <td></td>
+                  <td></td>
+                  <td>Panton No: PN 06257896</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td class="item-name">Lining</td>
+                  <td>Matching</td>
+                  <td>1yd</td>
+                  <td>Black</td>
+                  <td></td>
+                  <td></td>
+                  <td>Soft Cotton (Geox)</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td class="item-name">Care Label</td>
+                  <td></td>
+                  <td>3x2 cm</td>
+                  <td></td>
+                  <td>1</td>
+                  <td></td>
+                  <td>Inside and Front Upper</td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td class="item-name">Zipper</td>
+                  <td>Metal</td>
+                  <td>36x21x5</td>
+                  <td>Black</td>
+                  <td>2 yd</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td class="item-name">Runner</td>
+                  <td>YKK</td>
+                  <td>Small</td>
+                  <td>Black</td>
+                  <td>6</td>
+                  <td></td>
+                  <td>Placement: Inner/Outer</td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td class="item-name">Stopper</td>
+                  <td>YKK</td>
+                  <td></td>
+                  <td></td>
+                  <td>2</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td class="item-name">Puller</td>
+                  <td>Matching Leather Puller</td>
+                  <td></td>
+                  <td>Black</td>
+                  <td>3</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="02">09</td>
+                  <td rowspan="2" class="item-name">Metal</td>
+                  <td>D'Ring</td>
+                  <td>3x2 cm</td>
+                  <td>Nickel</td>
+                  <td>3</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Dog Hook</td>
+                  <td>5x2 cm</td>
+                  <td>Metal</td>
+                  <td>2</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td class="item-name">Re-Enforcement</td>
+                  <td>Eva</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Only use on bottom side</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td class="item-name">Logo</td>
+                  <td>Metal Logo</td>
+                  <td>3x2 cm</td>
+                  <td>Golden</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>Inside and Front Upper</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td class="item-name">Thread</td>
+                  <td>20/30</td>
+                  <td></td>
+                  <td>Black</td>
+                  <td></td>
+                  <td><img src="https://yeasinarafat.rf.gd/img/yeasin_arafat.jpg" alt=""></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td class="item-name">Edge</td>
+                  <td>Matching</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Matching Color, Clean Work</td>
+                </tr>
+              </tbody>
+            </table>
+            <b style="font-size: 10px;">Varient 02 (2 PCS)</b>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>SL.</th>
+                  <th>Item Name</th>
+                  <th>Type</th>
+                  <th>Size</th>
+                  <th>Color</th>
+                  <th>Qty</th>
+                  <th>Photo</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td class="item-name">Leather</td>
+                  <td>Flooter</td>
+                  <td>100sq</td>
+                  <td class="change">Soft Nappa</td>
+                  <td></td>
+                  <td></td>
+                  <td>Panton No: PN 06257896</td>
+                </tr>
+              </tbody>
+            </table>
+            <b style="font-size: 10px;">Varient 03 (2 PCS)</b>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>SL.</th>
+                  <th>Item Name</th>
+                  <th>Type</th>
+                  <th>Size</th>
+                  <th>Color</th>
+                  <th>Qty</th>
+                  <th>Photo</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td class="item-name">Leather</td>
+                  <td>Flooter</td>
+                  <td>100sq</td>
+                  <td class="change">Dark Gray</td>
+                  <td></td>
+                  <td></td>
+                  <td>Panton No: PN 06257896</td>
+                </tr>
+              </tbody>
+            </table>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========================================================
+					End User Layout Area 
+	=========================================================-->
+
+  <!--Normalizer-->
+  <script type="text/javascript" src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <!--JQuery-->
+  <script type="text/javascript" src="js/vendor/jquery.js"></script>
+  <!--Plugins-->
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Popup -->
+  <script src="https://cdn.jsdelivr.net/npm/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+  <!--ALL RELATED PLUGINS-->
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <!--Main Js-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+    // function preloadImagesAndGeneratePDF() {
+    //   const images = document.querySelectorAll('img');
+    //   const promises = Array.from(images).map(img => {
+    //     return new Promise((resolve, reject) => {
+    //       img.onload = resolve;
+    //       img.onerror = reject;
+    //     });
+    //   });
+    //   Promise.all(promises)
+    //     .then(() => {
+    //       generatePDF();
+    //     })
+    //     .catch(err => console.error("Image loading failed:", err));
+    // }
+
+    function generatePDF() {
+      // var element = document.getElementById('content');
+      // html2pdf(element);
+
+      const element = document.getElementById('content');
+      const opt = {
+        margin: [0.3, 0.3], // Top and side margins in inches
+        filename: 'a4-table.pdf',
+        image: {
+          type: 'jpeg',
+        },
+        html2canvas: {
+          scale: 4
+        },
+        jsPDF: {
+          unit: 'in',
+          format: 'a4',
+          orientation: 'portrait'
+        },
+      };
+      html2pdf().set(opt).from(element).save();
+    }
+  </script>
+</body>
+
+</html>
